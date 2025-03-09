@@ -1,0 +1,40 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin: 0 1rem;
+  color: #c89df8;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}
+
+.github:hover {
+  color: #2b4a01;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.instagram:hover {
+  /* background: linear-gradient(45deg, #f09433, #e6683c);
+    -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+  color: rgb(240, 97, 187);
+}
+
+.youtube:hover {
+  color: #cd201f;
+}
+.twitter:hover{
+  color: #0077b5;
+}

@@ -1,0 +1,22 @@
+.navbar {
+  background-color: rgb(250, 235, 211);
+}
+
+.nav-link {
+  color: rgb(18, 15, 15) !important;
+  font-size: 20px;
+}
+.navbar {
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color change */
+  background-color: rgb(250, 235, 211); /* Default background color */
+  color: brown; /* Default text color */
+}
+
+.navbar.scrolled {
+  background-color: rgb(242, 158, 110); /* Change background color on scroll */
+  color: white; /* Change text color on scroll */
+}
+
+.nav-link {
+  font-size: 20px;
+}

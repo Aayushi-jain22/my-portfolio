@@ -1,0 +1,152 @@
+#experience {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.experience-container {
+  position: relative;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(167, 134, 134, 0.1);
+  padding: 20px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.experience-heading {
+  font-size: 2.5rem;
+  color: #1a1111;
+  margin-bottom: 20px;
+}
+
+.experience-card {
+  margin-bottom: 30px;
+}
+
+.experience-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.experience-card p {
+  font-size: 1rem;
+  color: #f87b7b;
+  margin-bottom: 5px;
+}
+.experience-icon {
+  color: #333;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.experience-details {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.experience-details li {
+  font-size: 0.9rem;
+  /* color: #0000005b; */
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.experience-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/poster.jpg"); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  /* transition: transform 0.4s ease; */
+}
+
+.experience-container {
+  /* Existing styles */
+  transition: transform 0.3s ease; /* Added transition for transform */
+}
+
+.experience-container:hover {
+  transform: translateY(-5px); /* Added a slight elevation on hover */
+}
+
+.experience-container {
+  /* Existing styles */
+  transition: transform 0.3s ease; /* Added transition for transform */
+}
+
+.experience-container:hover {
+  transform: translateY(-5px) scale(1.06); /* Slightly elevate and zoom on hover */
+}
+
+.experience-container:hover .experience-heading {
+  color: #4a0909; /* Changed heading color on hover */
+}
+
+
+
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+
+
+.skill-icon {
+    font-size: 5rem;
+    transition: transform 0.5s ease;
+    margin: 30px;
+  }
+  
+  .skill-icon:hover {
+    transform: rotateY(180deg) scale(1.1);
+  }
+  
+
+
+.skills-heading {
+  margin-bottom: 20px;
+  color: #140630;
+}
+
+
+.html-icon {
+  color: #e34c26; /* HTML5 orange */
+}
+
+.css-icon {
+  color: #2965f1; /* CSS3 blue */
+}
+
+.js-icon {
+  color: #f7df1e; /* JavaScript yellow */
+}
+
+.react-icon {
+  color: #61dafb; /* React blue */
+}
+
+.node-icon {
+  color: #3c873a; /* Node.js green */
+}
+
+.database-icon {
+  color: #00758f; /* Database blue */
+}
+
+.icon-name {
+  font-size: 1rem;
+  color: #010101;
+  margin-bottom: 20px;
+}
