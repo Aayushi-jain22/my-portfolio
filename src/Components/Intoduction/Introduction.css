@@ -1,0 +1,9 @@
+.intro-img img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+}
+.myself-content {
+  color: rgb(31, 31, 72);
+  font-size: 18px;
+}

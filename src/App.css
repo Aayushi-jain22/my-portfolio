@@ -1,38 +1,301 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.imp {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.title {
   text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 40px 0 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title h2 {
+  font-size: 32px;
+  color: rgb(6, 60, 60);
+  text-transform: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* contact */
+
+.contact-form-container {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
+.contact-form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.text-left {
+  margin-bottom: 10px; /* Add some space below the text */
+}
+
+/* footer */
+
+.footer-content {
+  color: #fff;
+}
+
+.soc-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.icon-footer {
+  font-size: 30px;
+  margin: 0 10px;
+  color: #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.special-btn {
+  background-color: rgb(152, 30, 14);
+}
+.special-btn:hover {
+  background-color: rgb(79, 73, 73);
+}
+
+/* Resume Section */
+.resume-section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 50px 20px;
+}
+
+/* Resume Container */
+.resume-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.resume-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #343a40;
+}
+
+/* Description */
+.resume-text {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-toggle {
+  background-color: #007bff;
   color: white;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-toggle:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
+.btn-download {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.btn-download:hover {
+  background-color: #1e7e34;
+}
+
+/* Resume Preview */
+/* Background Image */
+.resume-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 25%, #47414193 100%);
+}
+
+/* Resume Card */
+.resume-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Title */
+.resume-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.btn-toggle,
+.btn-download {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-toggle:hover,
+.btn-download:hover {
+  background: #0056b3;
+}
+
+/* Resume Preview */
+.resume-preview-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.resume-iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  border: 2px solid #343a40;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+
+.contact-form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.status-message {
+  margin-top: 10px;
+  font-weight: bold;
 }
