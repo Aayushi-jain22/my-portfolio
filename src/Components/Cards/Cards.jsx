@@ -5,14 +5,15 @@ const projects = [
   {
     title: "GyataGPT AI",
     duration: "May 2024 - Present",
-    techStack: ["Laravel", "MySQL", "Angular", "Python"],
+    techStack: ["Laravel", "Django", "MySQL", "Angular"],
     description:
-      "A cloud-native platform enabling enterprises to create intelligent chatbots and virtual assistants. It integrates with over 10+ data sources like Shopify, Wordpress providing real-time, context-aware interactions.",
+      "A cloud-native platform enabling enterprises to create intelligent chatbots and virtual assistants. It integrates with over 10+ data sources like Shopify, Wordpress, websites providing real-time, context-aware interactions.",
     responsibilities: [
       "Maintained the backend infrastructure using Laravel ensuring robust and scalable server-side operations.",
       "Developed and integrated Laravel APIs to connect with various data sources for seamless data retrieval.",
+      "Migrated the project to Django, redesigning APIs and database architecture for better performance",
       "Utilized MySQL for efficient database management, ensuring high performance and reliability.",
-      "Implemented JWT and Passport authentication for secure and efficient user authorization.",
+      // "Implemented JWT and Passport authentication for secure and efficient user authorization.",
     ],
     // github: "#",
     blog: "https://gyatagpt.ai/",
