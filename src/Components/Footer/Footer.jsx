@@ -1,6 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import "./Footer.css";
+import {
+  faGithub,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,15 +22,24 @@ const Footer = () => {
             <p className="text-right text-center">© Aayushi {currentYear}</p>
           </div>
         </div>
-        <div className="soc-icons">
-          <a href="https://github.com/Aayushi-jain22" className=" icon-footer github">
-            <FontAwesomeIcon icon={faGithub}  />
+        <div className="social-icons">
+          <a
+            href="https://github.com/Aayushi-jain22"
+            className=" icon-footer git"
+          >
+            <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://twitter.com/aayushijain_24" className=" icon-footer twitter">
-            <FontAwesomeIcon icon={faTwitter}  />
+          <a
+            href="https://twitter.com/aayushijain_24"
+            className=" icon-footer twitter"
+          >
+            <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a href="https://www.youtube.com/channel/UCMT5K3QBgxOtObZDUhcNasQ" className="  icon-footer youtube">
-            <FontAwesomeIcon icon={faYoutube}  />
+          <a
+            href="https://www.youtube.com/channel/UCMT5K3QBgxOtObZDUhcNasQ"
+            className="  icon-footer youtube"
+          >
+            <FontAwesomeIcon icon={faYoutube} />
           </a>
         </div>
       </div>

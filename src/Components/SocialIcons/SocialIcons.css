@@ -17,8 +17,8 @@
   color: #007bff;
 }
 
-.github:hover {
-  color: #2b4a01;
+.git:hover {
+  color: #090109;
 }
 
 .linkedin:hover {
@@ -38,3 +38,12 @@
 .twitter:hover{
   color: #0077b5;
 }
+
+
+.git {
+  background: none !important; /* Remove any default background */
+  padding: 0; /* Remove any extra padding */
+  border-radius: 50%; /* Optional: Make it rounded if needed */
+}
+
+

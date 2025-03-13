@@ -1,0 +1,3 @@
+.footer .git:hover {
+    color: white !important;  /* Prevent it from changing on hover in the footer */
+  }

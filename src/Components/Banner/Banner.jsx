@@ -38,8 +38,8 @@ const Banner = () => {
                 <p className="my-4 banner-content">
                   <strong>
                     With 1 year of experience. I specialize in backend
-                    development using Laravel, and familiar with frontend
-                    technologies like React.js and Angular. Skilled in API
+                    development using Laravel, Django and familiar with frontend
+                    technologies like React.js. Skilled in API
                     development, secure authentication, and cross-functional
                     collaboration.
                   </strong>

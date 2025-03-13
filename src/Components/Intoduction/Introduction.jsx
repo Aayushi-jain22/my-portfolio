@@ -14,7 +14,7 @@ const Introduction = () => {
             <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-2 d-flex justify-content-center flex-column intro-text">
               <p className="myself-content">
                 I fell in love with programming because it's like solving
-                puzzles that bring ideas to life! 🧩 My specialty? Building
+                puzzles that bring ideas to life! My specialty? Building
                 sleek and powerful web applications.
                 <br />
                 <br />
@@ -23,7 +23,7 @@ const Introduction = () => {
                 new web app, I'm always up for a challenge.
                 <br />
                 <br />
-                With my expertise in backend development using technology <span className="imp">Laravel</span> and the <span className="imp">Python</span> , I bring ideas
+                With my expertise in backend development using technology <span className="imp">Laravel</span> and the <span className="imp">Django</span> , I bring ideas
                 to life with creativity and precision.
                 <br />
                 <br />
