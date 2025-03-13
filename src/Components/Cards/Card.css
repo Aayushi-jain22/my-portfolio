@@ -26,16 +26,20 @@
 
 .tech-stack {
   margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;  /* ✅ Allows wrapping */
+  gap: 5px; /* ✅ Adds space between badges */
 }
 
 .tech-badge {
-
   color: rgb(0, 0, 0);
   padding: 5px 10px;
   border-radius: 5px;
-  margin-right: 5px;
+  background: #e0e0e0; /* ✅ Adds a background color */
   font-size: 0.9rem;
+  white-space: nowrap; /* ✅ Prevents text from breaking */
 }
+
 
 .buttons .btn {
   display: inline-block;
