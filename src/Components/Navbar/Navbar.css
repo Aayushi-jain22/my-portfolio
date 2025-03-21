@@ -1,22 +1,47 @@
+/* Navbar styles */
 .navbar {
+  transition: background-color 0.3s, color 0.3s;
   background-color: rgb(250, 235, 211);
+  color: brown;
 }
 
+/* Navbar when scrolled */
+.navbar.scrolled {
+  background-color: rgb(242, 158, 110);
+  color: white;
+}
+
+/* Nav links */
 .nav-link {
   color: rgb(18, 15, 15) !important;
   font-size: 20px;
-}
-.navbar {
-  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color change */
-  background-color: rgb(250, 235, 211); /* Default background color */
-  color: brown; /* Default text color */
+  transition: color 0.3s ease-in-out; /* Smooth transition */
 }
 
-.navbar.scrolled {
-  background-color: rgb(242, 158, 110); /* Change background color on scroll */
-  color: white; /* Change text color on scroll */
+/* Remove default blue hover effect on nav links */
+.nav-link:hover,
+.nav-link:focus {
+  color: rgb(18, 15, 15) !important; /* Keeps original color */
+  text-decoration: none !important;
 }
 
-.nav-link {
-  font-size: 20px;
+/* Navbar Toggler (Hamburger Button) Fix */
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent !important;
+  padding: 5px; /* Adjust padding if needed */
+}
+
+/* Remove blue focus effect when clicking the toggler */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  background: transparent !important;
+}
+
+/* Optional: Make the toggler icon a bit bigger */
+.navbar-toggler svg {
+  font-size: 1.5rem;
+  color: black; /* Change to desired color */
 }

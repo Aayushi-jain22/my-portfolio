@@ -31,15 +31,15 @@ const Banner = () => {
               <div className="col-md-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
                 <h1>
                   <strong>
-                    Hi There! <br /> I am Aayushi Jain, <br />
+                    Hi There! <br /> I'm Aayushi Jain,<br />
                     <span className="imp">{typedText}</span>
                   </strong>
                 </h1>
                 <p className="my-4 banner-content">
                   <strong>
                     With 1 year of experience. I specialize in backend
-                    development using Laravel, Django and familiar with frontend
-                    technologies like React.js. Skilled in API
+                    development using technology Python, Django, Laravel and familiar with frontend
+                    technologies like React.js, Angular. Skilled in API
                     development, secure authentication, and cross-functional
                     collaboration.
                   </strong>

@@ -1,9 +1,15 @@
-.intro-img img {
+/* .intro-img img {
   max-width: 50%;
   height: auto;
   border-radius: 50%;
-}
+} */
 .myself-content {
   color: rgb(31, 31, 72);
   font-size: 18px;
+}
+.intro-img img {
+  width: 350px; /* Ensure a fixed width */
+  height: 350px; /* Ensure a fixed height */
+  object-fit: cover; /* Crop instead of stretching */
+  border-radius: 50%; /* Make it circular */
 }
