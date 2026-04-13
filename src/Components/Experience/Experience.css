@@ -2,45 +2,78 @@
   position: relative;
   overflow: hidden;
   padding: 100px 0;
+  background: linear-gradient(180deg, #fff9f1 0%, #fdf1e6 100%);
 }
 
 .experience-container {
   position: relative;
   z-index: 1;
   background-color: rgb(255, 255, 255);
-  border-radius: 20px;
-  box-shadow: 0px 0px 20px rgba(167, 134, 134, 0.1);
-  padding: 20px 20px;
-  max-width: 700px;
+  border-radius: 28px;
+  box-shadow: 0px 24px 70px rgba(58, 40, 40, 0.12);
+  padding: 40px 32px;
+  max-width: 1100px;
   margin: 0 auto;
   text-align: center;
 }
 
 .experience-heading {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   color: #1a1111;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+}
+
+.experience-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .experience-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 .experience-card {
-  margin-bottom: 30px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  text-align: left;
+  border: 1px solid rgba(173, 134, 108, 0.16);
+  box-shadow: 0 16px 40px rgba(149, 105, 81, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 60px rgba(149, 105, 81, 0.16);
 }
 
 .experience-card h3 {
   font-size: 1.5rem;
-  color: #333;
+  color: #241c16;
   margin-bottom: 10px;
 }
 
-.experience-card p {
-  font-size: 1rem;
-  color: #f87b7b;
-  margin-bottom: 5px;
+.experience-card .imp {
+  color: #c35b2e;
+  text-decoration: none;
 }
-.experience-icon {
-  color: #333;
-  font-size: 2rem;
-  margin-right: 10px;
+
+.experience-card .imp:hover {
+  text-decoration: underline;
+}
+
+.experience-date {
+  font-size: 0.98rem;
+  color: #a0644d;
+  margin-bottom: 18px;
+  letter-spacing: 0.02em;
 }
 
 .experience-details {
@@ -50,48 +83,55 @@
 }
 
 .experience-details li {
-  font-size: 0.9rem;
-  /* color: #0000005b; */
-  margin-bottom: 8px;
-  line-height: 1.4;
+  font-size: 1rem;
+  color: #403a34;
+  margin-bottom: 14px;
+  line-height: 1.75;
+  position: relative;
+  padding-left: 28px;
+}
+
+.experience-details li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  width: 10px;
+  height: 10px;
+  background: #d56f3a;
+  border-radius: 50%;
+}
+
+.experience-icon {
+  color: #333;
+  font-size: 2.25rem;
+  margin-left: 10px;
 }
 
 .experience-background {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140%;
   height: 100%;
-  background-image: url("../../assets/images/poster.jpg"); /* Replace with your background image */
-  background-size: cover;
-  background-position: center;
+  background:
+    radial-gradient(
+      circle at top center,
+      rgba(255, 255, 255, 0.9),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(255, 203, 157, 0.25),
+      transparent 30%
+    );
   z-index: -1;
-  /* transition: transform 0.4s ease; */
-}
-
-.experience-container {
-  /* Existing styles */
-  transition: transform 0.3s ease; /* Added transition for transform */
-}
-
-.experience-container:hover {
-  transform: translateY(-5px); /* Added a slight elevation on hover */
-}
-
-.experience-container {
-  /* Existing styles */
-  transition: transform 0.3s ease; /* Added transition for transform */
-}
-
-.experience-container:hover {
-  transform: translateY(-5px) scale(1.06); /* Slightly elevate and zoom on hover */
 }
 
 .experience-container:hover .experience-heading {
-  color: #4a0909; /* Changed heading color on hover */
+  color: #4a0909;
 }
-
-
 
 .skills-icons {
   display: flex;
@@ -101,25 +141,20 @@
   margin-top: 20px;
 }
 
-
-
 .skill-icon {
-    font-size: 5rem;
-    transition: transform 0.5s ease;
-    margin: 30px;
-  }
-  
-  .skill-icon:hover {
-    transform: rotateY(180deg) scale(1.1);
-  }
-  
+  font-size: 5rem;
+  transition: transform 0.5s ease;
+  margin: 30px;
+}
 
+.skill-icon:hover {
+  transform: rotateY(180deg) scale(1.1);
+}
 
 .skills-heading {
   margin-bottom: 20px;
   color: #140630;
 }
-
 
 .html-icon {
   color: #e34c26; /* HTML5 orange */

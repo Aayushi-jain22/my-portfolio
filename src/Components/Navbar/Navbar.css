@@ -25,6 +25,13 @@
   text-decoration: none !important;
 }
 
+/* Active nav link styling */
+.nav-link.active {
+  color: rgb(242, 95, 36) !important;
+  font-weight: 700;
+  border-bottom: 2px solid rgb(242, 95, 36);
+}
+
 /* Navbar Toggler (Hamburger Button) Fix */
 .navbar-toggler {
   border: none !important;

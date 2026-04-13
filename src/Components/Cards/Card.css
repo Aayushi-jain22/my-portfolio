@@ -1,54 +1,124 @@
 #projects {
   text-align: center;
-  padding: 50px;
-  background: #f5f5f5;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #f8f4ef 0%, #ffffff 100%);
 }
 
 .section-title {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 30px;
+  font-size: 2.4rem;
+  color: #2b1f17;
+  margin-bottom: 28px;
+  letter-spacing: 0.02em;
 }
 
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  justify-items: center;
+  padding: 0 10px;
+}
+
+@media (max-width: 1100px) {
+  .projects-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
 
 .project-card {
-  background: white;
-  padding: 20px;
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 22px 50px rgba(93, 68, 54, 0.08);
+  padding: 28px;
+  width: 100%;
+  max-width: 420px;
+  text-align: left;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 1px solid rgba(180, 155, 129, 0.18);
 }
 
 .project-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-8px);
+  box-shadow: 0 28px 64px rgba(93, 68, 54, 0.16);
+}
+
+.project-card h3 {
+  font-size: 1.45rem;
+  color: #34241e;
+  margin-bottom: 12px;
+}
+
+.duration {
+  font-size: 0.98rem;
+  color: #7a6456;
+  margin-bottom: 16px;
+}
+
+.project-card p {
+  color: #4c3f37;
+  line-height: 1.75;
+}
+
+.responsibilities {
+  margin-top: 18px;
+  padding-left: 20px;
+}
+
+.responsibilities li {
+  margin-bottom: 10px;
+  color: #4c3f37;
+  line-height: 1.7;
 }
 
 .tech-stack {
-  margin: 10px 0;
+  margin-top: 18px;
   display: flex;
-  flex-wrap: wrap;  /* ✅ Allows wrapping */
-  gap: 5px; /* ✅ Adds space between badges */
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .tech-badge {
-  color: rgb(0, 0, 0);
-  padding: 5px 10px;
-  border-radius: 5px;
-  background: #e0e0e0; /* ✅ Adds a background color */
-  font-size: 0.9rem;
-  white-space: nowrap; /* ✅ Prevents text from breaking */
+  color: #3d2c25;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #f1e2d7;
+  font-size: 0.85rem;
+  white-space: nowrap;
 }
 
+.buttons {
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-.buttons .btn {
-  display: inline-block;
-  padding: 8px 15px;
-  margin: 5px;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+  background: #2c4f88;
   color: white;
-  border-radius: 5px;
-  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #1e3860;
+  transform: translateY(-1px);
 }
 
 .github {
@@ -59,68 +129,16 @@
   background: #28a745;
 }
 
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
+.blog {
+  background: #d67f3e;
 }
 
-.project-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-width: 600px; /* Increased width */
-  width: 100%; /* Makes it responsive */
-  text-align: left;
-  transition: transform 0.2s;
-}
-
-.project-card:hover {
-  transform: scale(1.03);
-}
-
-.duration {
-  font-weight: bold;
-  color: #555;
-}
-
-.responsibilities {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-.responsibilities li {
-  margin-bottom: 5px;
-}
-
-.tech-stack {
-  margin-top: 10px;
-}
-
-.buttons {
-  margin-top: 15px;
-}
-
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  background: #007bff;
-  color: white;
-  padding: 8px 15px;
-  border-radius: 5px;
-  margin-right: 10px;
-  transition: background 0.2s;
-}
-
-.btn:hover {
-  background: #0056b3;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .project-card {
-    max-width: 90%; /* Responsive width for smaller screens */
+    padding: 22px;
+  }
+
+  .section-title {
+    font-size: 2rem;
   }
 }

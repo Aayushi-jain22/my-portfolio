@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-import { FaBars, FaTimes } from "react-icons/fa"; 
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -22,13 +22,13 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`navbar navbar-expand-lg sticky-top ${scrolled ? "scrolled" : ""}`}>
+      <nav
+        className={`navbar navbar-expand-lg sticky-top ${scrolled ? "scrolled" : ""}`}
+      >
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="/" onClick={closeMenu}>
             <i>Aayushi</i>
           </NavLink>
-
-          {/* Toggle Button with Dynamic Icon */}
           <button
             className="navbar-toggler"
             type="button"
@@ -40,31 +40,65 @@ const Navbar = () => {
           </button>
 
           {/* Navigation Links */}
-          <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`} id="navbarSupportedContent">
+          <div
+            className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`}
+            id="navbarSupportedContent"
+          >
             <ul className="navbar-nav ms-auto mb-3 mb-lg-0">
               <li className="nav-item">
-                <NavLink className="nav-link active ms-5" to="/" onClick={closeMenu}>
+                <NavLink
+                  to="/"
+                  end
+                  className={({ isActive }) =>
+                    `nav-link ms-5${isActive ? " active" : ""}`
+                  }
+                  onClick={closeMenu}
+                >
                   About
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link active ms-5" to="/experience" onClick={closeMenu}>
+                <NavLink
+                  to="/experience"
+                  className={({ isActive }) =>
+                    `nav-link ms-5${isActive ? " active" : ""}`
+                  }
+                  onClick={closeMenu}
+                >
                   Experience
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link active ms-5" to="/projects" onClick={closeMenu}>
+                <NavLink
+                  to="/projects"
+                  className={({ isActive }) =>
+                    `nav-link ms-5${isActive ? " active" : ""}`
+                  }
+                  onClick={closeMenu}
+                >
                   Projects
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link active ms-5" to="/resume" onClick={closeMenu}>
+                {/* <NavLink
+                  to="/resume"
+                  className={({ isActive }) =>
+                    `nav-link ms-5${isActive ? " active" : ""}`
+                  }
+                  onClick={closeMenu}
+                >
                   Resume
-                </NavLink>
+                </NavLink> */}
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link ms-5" to="/contact" onClick={closeMenu}>
-                  <button className="btn btn-primary rounded-pill">Contact</button>
+                <NavLink
+                  className="nav-link ms-5"
+                  to="/contact"
+                  onClick={closeMenu}
+                >
+                  <button className="btn btn-primary rounded-pill">
+                    Contact
+                  </button>
                 </NavLink>
               </li>
             </ul>

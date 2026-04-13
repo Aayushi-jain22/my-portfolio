@@ -13,25 +13,17 @@ const Introduction = () => {
             </div>
             <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-2 d-flex justify-content-center flex-column intro-text">
               <p className="myself-content">
-                I fell in love with programming because it's like solving
-                puzzles that bring ideas to life! My specialty? Building sleek
-                and powerful web applications.
+            I fell in love with programming because it feels like solving puzzles that bring ideas to life. I enjoy building sleek and scalable web applications that solve real-world problems.
                 <br />
                 <br />
-                I'm passionate about using technology to build products that
-                make a difference. Whether it's developing a new web app, I'm
-                always up for a challenge.
+             I’m passionate about using technology to create meaningful products and continuously challenge myself with new ideas and solutions.
                 <br />
                 <br />
-                With my expertise in backend development using technology{" "}
-                <span className="imp">Laravel</span> and the{" "}
-                <span className="imp"> python (Django) </span> I bring ideas to
-                life with creativity and precision.
+                With hands-on experience in backend development using{" "}
+                <span className="imp"> python , Django , DRF. </span> I specialize in building robust, secure, and high-performance applications. I focus on writing clean, efficient code and delivering reliable solutions.
                 <br />
                 <br />
-                If you're looking for someone to collaborate on your exciting
-                projects or just geek out about tech, I'm your person! Let's
-                connect and make some magic happen! ✨
+            If you're looking to collaborate on exciting projects or discuss innovative ideas, let’s connect!
               </p>
             </div>
           </div>
