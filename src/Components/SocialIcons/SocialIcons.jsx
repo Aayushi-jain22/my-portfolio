@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
-  faInstagram,
+  // faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import "./SocialIcons.css";

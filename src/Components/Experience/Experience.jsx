@@ -8,7 +8,7 @@ import {
   FaDatabase,
   FaJava,
 } from "react-icons/fa";
-import { FaAngular } from "react-icons/fa";
+// import { FaAngular } from "react-icons/fa";
 import { SiPhp, SiLaravel, SiDjango } from "react-icons/si";
 import "./Experience.css";
 
