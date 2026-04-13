@@ -79,8 +79,8 @@ const Navbar = () => {
                   Projects
                 </NavLink>
               </li>
-              <li className="nav-item">
-                {/* <NavLink
+              {/* <li className="nav-item">
+                <NavLink
                   to="/resume"
                   className={({ isActive }) =>
                     `nav-link ms-5${isActive ? " active" : ""}`
@@ -88,8 +88,8 @@ const Navbar = () => {
                   onClick={closeMenu}
                 >
                   Resume
-                </NavLink> */}
-              </li>
+                </NavLink>
+              </li> */}
               <li className="nav-item">
                 <NavLink
                   className="nav-link ms-5"

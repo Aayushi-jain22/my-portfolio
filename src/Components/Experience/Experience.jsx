@@ -104,8 +104,10 @@ const Experience = () => {
                   and resolving technical issues.
                 </li>
 
-                 <li>
-                 Developed and enhanced user interfaces, implemented dashboards, and utilized librariesfor efficient data fetching and state management.
+                <li>
+                  Developed and enhanced user interfaces, implemented
+                  dashboards, and utilized librariesfor efficient data fetching
+                  and state management.
                 </li>
               </ul>
             </article>
@@ -147,14 +149,7 @@ const Experience = () => {
                   <div className="icon-name">React.js</div>
                 </div>
 
-                <div className="skill">
-                  <FaJava
-                    className="skill-icon java-icon"
-                    title="Core Java"
-                    style={{ color: "#007396" }}
-                  />
-                  <div className="icon-name">Core Java</div>
-                </div>
+             
                 {/* <div className="skill">
                   <FaAngular
                     className="skill-icon angular-icon"
@@ -163,7 +158,33 @@ const Experience = () => {
                   />
                   <div className="icon-name">Angular</div>
                 </div> */}
-                {/* <div className="skill">
+            
+
+                <div className="skill">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                    alt="Python"
+                    className="skill-icon"
+                  />
+                  <div className="icon-name">Python</div>
+                </div>
+                <div className="skill">
+                  <SiDjango
+                    className="skill-icon django-icon"
+                    title="Django"
+                    style={{ color: "#092E20" }}
+                  />
+                  <div className="icon-name">Django</div>
+                </div>
+                   <div className="skill">
+                  <FaJava
+                    className="skill-icon java-icon"
+                    title="Core Java"
+                    style={{ color: "#007396" }}
+                  />
+                  <div className="icon-name">Core Java</div>
+                </div>
+                    <div className="skill">
                   <SiPhp
                     className="skill-icon php-icon"
                     title="PHP"
@@ -178,24 +199,6 @@ const Experience = () => {
                     style={{ color: "#FF2D20" }}
                   />
                   <div className="icon-name">Laravel</div>
-                </div> */}
-
-                <div className="skill">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                    alt="Python"
-                    className="skill-icon"
-                    style={{ width: "70px", height: "77px" }}
-                  />
-                  <div className="icon-name">Python</div>
-                </div>
-                <div className="skill">
-                  <SiDjango
-                    className="skill-icon django-icon"
-                    title="Django"
-                    style={{ color: "#092E20" }}
-                  />
-                  <div className="icon-name">Django</div>
                 </div>
                 <div className="skill">
                   <FaDatabase

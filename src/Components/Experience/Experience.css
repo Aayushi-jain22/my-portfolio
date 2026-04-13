@@ -134,17 +134,35 @@
 }
 
 .skills-icons {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
   margin-top: 20px;
+  padding: 0 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
 }
 
 .skill-icon {
-  font-size: 5rem;
+  font-size: 4rem;
   transition: transform 0.5s ease;
-  margin: 30px;
+  margin-bottom: 10px;
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
 }
 
 .skill-icon:hover {
@@ -154,6 +172,47 @@
 .skills-heading {
   margin-bottom: 20px;
   color: #140630;
+  padding-top: 2px;
+  margin-top: 14px;
+}
+
+@media (max-width: 768px) {
+  .skills-icons {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .skill-icon {
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .skill {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-icons {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .skill {
+    padding: 8px;
+  }
+
+  .icon-name {
+    font-size: 0.9rem;
+  }
 }
 
 .html-icon {
@@ -183,5 +242,6 @@
 .icon-name {
   font-size: 1rem;
   color: #010101;
-  margin-bottom: 20px;
+  margin-top: 8px;
+  font-weight: 500;
 }

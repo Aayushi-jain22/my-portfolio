@@ -74,7 +74,7 @@ const Projects = () => {
               ))}
             </div>
 
-            <div className="buttons">
+            {/* <div className="buttons">
               {project.github && (
                 <a
                   href={project.github}
@@ -105,7 +105,7 @@ const Projects = () => {
                   Read More
                 </a>
               )}
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
