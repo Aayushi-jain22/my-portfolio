@@ -20,7 +20,7 @@ const Introduction = () => {
                 <br />
                 <br />
                 With hands-on experience in backend development using{" "}
-                <span className="imp"> python , Django , DRF. </span> I specialize in building robust, secure, and high-performance applications. I focus on writing clean, efficient code and delivering reliable solutions.
+                <span className="imp"> python , Django , DRF , FastAPI</span> I specialize in building robust, secure, and high-performance applications. I focus on writing clean, efficient code and delivering reliable solutions.
                 <br />
                 <br />
             If you're looking to collaborate on exciting projects or discuss innovative ideas, let’s connect!

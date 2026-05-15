@@ -55,7 +55,7 @@ const Experience = () => {
               <ul className="experience-details">
                 <li>
                   Developed and maintained production-grade RESTful APIs using
-                  Django REST Framework across multiple SaaS products.
+                  Django REST Framework, FastAPI across multiple SaaS products.
                 </li>
                 <li>
                   Created asynchronous background jobs using Celery & Redis,

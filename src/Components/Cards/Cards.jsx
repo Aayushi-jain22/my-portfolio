@@ -22,7 +22,7 @@ const projects = [
   {
     title: "MyLiveCart",
     // duration: "",
-    techStack: ["Python", "Django", "DRF", "React", "Redux", "MySQL"],
+    techStack: ["Python", "FastAPI", "React", "Redux", "MySQL"],
     description:
       "A live commerce platform for multi-vendor stores that combines real-time shopping, live streaming, and analytics into one scalable experience.",
     responsibilities: [

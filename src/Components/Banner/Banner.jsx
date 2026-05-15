@@ -37,7 +37,7 @@ const Banner = () => {
                 </h1>
                 <p className="my-4 banner-content">
                   <strong>
-               Software Engineer with 2+ years of experience building scalable web applications using Python, Django, and Django REST Framework (DRF). Proficient in developing high-performance APIs, implementing secure authentication mechanisms, and optimizing system performance. Experienced in React.js for creating dynamic and responsive user interfaces, with a strong focus on delivering end-to-end product solutions.
+               Software Engineer with 2+ years of experience building scalable web applications using Python, Django, and Django REST Framework (DRF), FastAPI, MySQL. Proficient in developing high-performance APIs, implementing secure authentication mechanisms, and optimizing system performance. Experienced in React.js for creating dynamic and responsive user interfaces, with a strong focus on delivering end-to-end product solutions.
                   </strong>
                 </p>
                 <div>
