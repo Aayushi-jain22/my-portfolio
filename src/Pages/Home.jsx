@@ -11,7 +11,7 @@ const Home = () => {
     <Title subtitle="Let me introduce" title="My Expertise"/>
 
     <Introduction/>
-    <Title  subtitle="Find me Here" title="Let's Connect  "/>
+    <Title  subtitle="Find me Here" title="Let's Connect"/>
     <SocialIcons/>
 
     </>

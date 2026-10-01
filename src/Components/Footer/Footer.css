@@ -1,3 +1,8 @@
-.footer .git:hover {
-    color: white !important;  /* Prevent it from changing on hover in the footer */
-  }
+.footer { margin-top: 90px; border-top: 1px solid var(--border); background: rgba(7, 11, 20, 0.7); padding: 28px 0; }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.footer-content p { color: var(--muted); font-size: 14px; margin: 0; }
+.footer-content .copy { font-size: 13px; opacity: .75; }
+.footer-social { display: flex; gap: 8px; }
+.icon-footer { width: 40px; height: 40px; display: grid; place-items: center; font-size: 19px; color: var(--muted); border-radius: 12px; transition: color .2s, background .2s, transform .2s; }
+.icon-footer:hover { color: #fff; background: var(--surface-2); transform: translateY(-2px); }
+@media (max-width: 600px) { .footer-inner { justify-content: center; text-align: center; } }

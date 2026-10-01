@@ -1,54 +1,20 @@
-/* Navbar styles */
-.navbar {
-  transition: background-color 0.3s, color 0.3s;
-  background-color: rgb(250, 235, 211);
-  color: brown;
-}
+.site-nav { position: sticky; top: 0; z-index: 100; padding: 14px 0; transition: background .3s, border-color .3s, padding .3s; border-bottom: 1px solid transparent; }
+.site-nav.scrolled { background: rgba(7, 11, 20, 0.78); backdrop-filter: blur(14px); border-color: var(--border); padding: 10px 0; }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; }
+.nav-brand { display: flex; align-items: center; gap: 10px; }
+.brand-mark { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--grad); color: #07101c; font-family: var(--font-head); font-weight: 700; font-size: 15px; }
+.brand-name { font-family: var(--font-head); font-weight: 600; font-size: 18px; color: var(--text); }
+.nav-links { list-style: none; display: flex; align-items: center; gap: 6px; }
+.nav-link-x { position: relative; padding: 8px 14px; border-radius: 999px; color: var(--muted); font-size: 15px; font-weight: 500; transition: color .2s, background .2s; }
+.nav-link-x:hover { color: var(--text); background: var(--surface); }
+.nav-link-x.active { color: #fff; background: var(--surface-2); }
+.nav-cta { margin-left: 10px; padding: 9px 20px; font-size: 14px; }
+.nav-toggle { display: none; background: transparent; border: none; color: var(--text); cursor: pointer; }
 
-/* Navbar when scrolled */
-.navbar.scrolled {
-  background-color: rgb(242, 158, 110);
-  color: white;
-}
-
-/* Nav links */
-.nav-link {
-  color: rgb(18, 15, 15) !important;
-  font-size: 20px;
-  transition: color 0.3s ease-in-out; /* Smooth transition */
-}
-
-/* Remove default blue hover effect on nav links */
-.nav-link:hover,
-.nav-link:focus {
-  color: rgb(18, 15, 15) !important; /* Keeps original color */
-  text-decoration: none !important;
-}
-
-/* Active nav link styling */
-.nav-link.active {
-  color: rgb(242, 95, 36) !important;
-  font-weight: 700;
-  border-bottom: 2px solid rgb(242, 95, 36);
-}
-
-/* Navbar Toggler (Hamburger Button) Fix */
-.navbar-toggler {
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-  background: transparent !important;
-  padding: 5px; /* Adjust padding if needed */
-}
-
-/* Remove blue focus effect when clicking the toggler */
-.navbar-toggler:focus,
-.navbar-toggler:active {
-  background: transparent !important;
-}
-
-/* Optional: Make the toggler icon a bit bigger */
-.navbar-toggler svg {
-  font-size: 1.5rem;
-  color: black; /* Change to desired color */
+@media (max-width: 860px) {
+  .nav-toggle { display: block; }
+  .nav-links { position: absolute; top: 100%; left: 4%; right: 4%; flex-direction: column; align-items: stretch; gap: 4px; padding: 14px; margin-top: 8px; border-radius: var(--radius); background: rgba(13, 20, 35, 0.96); border: 1px solid var(--border); backdrop-filter: blur(14px); display: none; }
+  .nav-links.open { display: flex; }
+  .nav-link-x { display: block; padding: 12px 16px; }
+  .nav-cta { margin: 6px 0 0; justify-content: center; }
 }

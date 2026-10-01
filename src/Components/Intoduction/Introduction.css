@@ -1,11 +1,14 @@
-
-.myself-content {
-  color: rgb(31, 31, 72);
-  font-size: 18px;
-}
-.intro-img img {
-  width: 350px; /* Ensure a fixed width */
-  height: 350px; /* Ensure a fixed height */
-  object-fit: cover; /* Crop instead of stretching */
-  border-radius: 50%; /* Make it circular */
+.intro-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 56px; align-items: center; }
+.intro-photo { border-radius: 24px; padding: 3px; background: linear-gradient(160deg, var(--accent-2), var(--accent)); max-width: 380px; margin: 0 auto; box-shadow: 0 24px 60px rgba(0,0,0,.45); }
+.intro-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: top; border-radius: 21px; display: block; }
+.myself-content { color: var(--muted); font-size: 17px; margin-bottom: 16px; }
+.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 26px; }
+.pillar { padding: 18px; }
+.pillar:hover { transform: translateY(-4px); }
+.pillar-icon { font-size: 24px; margin-bottom: 8px; }
+.pillar h4 { font-size: 16px; margin-bottom: 6px; }
+.pillar p { font-size: 13.5px; color: var(--muted); line-height: 1.5; margin: 0; }
+@media (max-width: 900px) {
+  .intro-grid { grid-template-columns: 1fr; gap: 32px; }
+  .pillars { grid-template-columns: 1fr; }
 }

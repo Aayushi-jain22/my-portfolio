@@ -1,22 +1,16 @@
 import React from "react";
-import './Title.css'
+import "./Title.css";
 
-const Title = ({subtitle,title}) => {
+const Title = ({ subtitle, title }) => {
   return (
-    <>
- 
-      <div className="container">
-      
-          <div className="col-10 mx-auto ">
-            <div className="title ">
-              <h5>{subtitle}</h5>
-              <h2><span className="underline"> {title}</span></h2>
-            </div>
-          </div>
-       
+    <div className="wrap">
+      <div className="section-head">
+        <h5>{subtitle}</h5>
+        <h2>
+          <span className="underline">{title}</span>
+        </h2>
       </div>
-   
-    </>
+    </div>
   );
 };
 
